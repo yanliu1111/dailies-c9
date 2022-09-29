@@ -9,7 +9,7 @@ function fixLamp(lampPlugIn, bulbBured, askHelp) {
   console.log("End!!!Lamp works");
 }
 // console.log("\n");
-// console.log("Lamp broken, repair by myself");
+// console.log("Title: Lamp broken, repair by myself");
 // fixLamp(true, false, false);
 
 console.log("\n");

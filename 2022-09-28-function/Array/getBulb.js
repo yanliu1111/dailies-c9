@@ -8,7 +8,7 @@ const getPriceValuation = (lamp) => {
   if (lamp.price > 40) {
     return `Expensive bulb, price is ${lamp.price}`;
   } else {
-    `Cheap bulb, price is ${lamp.price}`;
+    return `Cheap bulb, price is ${lamp.price}`;
   }
 };
 // question: how do I know lamp to match price
