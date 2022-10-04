@@ -1,0 +1,16 @@
+{
+  "name": "2022-10-3-rockpaperscissor",
+  "version": "0.1.0",
+  "description": "Rock, paper, scissors termial game",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dosomethingcool": "echo Hi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yan Liu",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -4,11 +4,11 @@ const getRandomLamp = (lampItems) => {
   return lampItems[randomIndex];
 };
 
-const getPriceValuation = (lamp) => {
-  if (lamp.price > 40) {
-    return `Expensive bulb, price is ${lamp.price}`;
+const getPriceValuation = (bulb) => {
+  if (bulb.price > 40) {
+    return `Expensive bulb, price is ${bulb.price}`;
   } else {
-    return `Cheap bulb, price is ${lamp.price}`;
+    return `Cheap bulb, price is ${bulb.price}`;
   }
 };
 // question: how do I know lamp to match price
