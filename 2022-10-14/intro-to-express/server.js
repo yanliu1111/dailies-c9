@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const PORT = 4000;
-app.use(express.json());
-
+app.use(express.json()); //middleware, your app use it, express to json function, and return to some middleware
+//if use urlencode, still middleware, means you accept form like txt file
 app.post("/hello", (req, res) => {
-  console.log(req.body);
-  res.send(req.body);
+  console.log(req.body); //show in teminal from client to server
+  res.send(req.body); //response back can be checked in .REST (post)
 });
 //response.send(new Date())
 let currentDate = new Date().toLocaleDateString("en-us", {
@@ -21,7 +21,7 @@ let currentDate = new Date().toLocaleDateString("en-us", {
 
 //forest app
 app.get("/forest", (request, response) => {
-  console.log("request is", request);
+  // console.log("request is", request);
   console.log("query is", request.query);
 
   let daylight = request.query.daylight;
