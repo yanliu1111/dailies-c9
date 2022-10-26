@@ -1,0 +1,12 @@
+{
+  "name": "asynchronous-programming",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.10",
+    "readline-sync": "^1.4.10"
+  }
+}

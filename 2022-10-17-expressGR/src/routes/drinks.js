@@ -1,42 +1,36 @@
 import express from "express";
-export const drinkRouter = express.Router;
-let sandwiches = [
-  {
-    name: "cock",
-  },
-  {
-    name: "shirly temple ",
-  },
-  {
-    name: "manhattan",
-  },
-  {
-    name: "ale",
-  },
-];
-//list all sandwiches
-drinkRouter.get("/", (req, res) => {
-  res.send(sandwiches);
-});
-//post for creating sandwiches
-//create a new sandwich
-router.post("/", (req, res) => {
-  const sandwich = req.body;
-  sandwiches.push(sandwich);
-  // console.log(sandwich.name);
-  res.send();
-});
-//delete a  sandwich
-//filter what to keep
-router.delete("/", (req, res) => {
-  const sandwich = req.body;
-  console.log(sandwich);
-  sandwiches = sandwiches.filter((s) => s.name !== sandwich.name);
+import {
+  createdrink,
+  deletedrink,
+  listAlldrinks,
+  updateDrink,
+} from "../models/drink.js";
+export const router = express.Router();
 
+//list all drinks
+router.get("/", (req, res) => {
+  const drinks = listAlldrinks();
+  res.send(drinks);
+});
+
+//post for creating sandwiches
+router.post("/", (req, res) => {
+  const drink = req.body;
+  createdrink(drink);
   res.send();
-  //   const filterSandwiches = sandwiches.filter(
-  //     (sandwich) => sandwich.ingredients.length <= 3
-  //   );
-  //   console.log("Filtered: ", filterSandwiches);
-  //   res.send("Original: ", sandwiches);
+});
+//Update a drink
+router.patch("/:id", (req, res) => {
+  const dirnkId = Number(req.params.id);
+  const drink = req.body;
+
+  updateDrink(dirnkId, drink);
+  res.send();
+});
+
+//delete a  sandwich
+router.delete("/:id", (req, res) => {
+  const dirnkId = Number(req.params.id);
+  deletedrink(dirnkId);
+  res.send();
 });
