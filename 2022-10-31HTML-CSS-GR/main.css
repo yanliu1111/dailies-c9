@@ -1,0 +1,33 @@
+h1 {
+  font-size: 50px;
+  color: rgb(241, 163, 19);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+
+.container .row {
+  border: 1px solid black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+h1 {
+  font: 50px;
+  color: orange;
+}
+#my-header {
+  color: orangered;
+}
+.greeting {
+  font-size: 75px;
+  color: white;
+  background-color: blueviolet;
+}
