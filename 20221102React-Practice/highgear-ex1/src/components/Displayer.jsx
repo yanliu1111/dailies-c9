@@ -2,7 +2,7 @@ import React from "react";
 
 function Displayer(props) {
   const count = props.count;
-  return <p>{Displayer}</p>;
+  return <p>Second count: {count}</p>;
 }
 
 export default Displayer;

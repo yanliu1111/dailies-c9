@@ -2,8 +2,13 @@ import React from "react";
 
 function Adder(props) {
   const setCount = props.setCount;
+  function increaseCount() {
+    setCount((oldValue) => {
+      return oldValue + 1;
+    });
+  }
   return (
-    <button onClick={() => setCount(props.count + 1)}>
+    <button className="yellow-button" onClick={increaseCount}>
       Increase the count
     </button>
   );

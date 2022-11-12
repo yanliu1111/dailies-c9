@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+.red-button {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.yellow-button {
+  background-color: yellow;
+  color: black;
+  font-size: 15px;
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
