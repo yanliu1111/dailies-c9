@@ -19,9 +19,19 @@ h4,
 
 .container .row {
   border: 1px solid black;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
+  height: 50px;
+  /*margin: 5px 0 0 0; top bottom right left, if only two numbers, it means (top&bottom) and (right&left)*/
+  margin-bottom: 25px;
+}
+.container .row:last-child {
+  margin-bottom: 0;
+}
+
+/* .container > h1:first-child {
+  color: green;
+} */
+.container > h1:nth-child(2n + 1) {
+  color: green;
 }
 
 h1 {

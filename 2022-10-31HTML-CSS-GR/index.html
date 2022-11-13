@@ -1,21 +1,35 @@
 <html>
   <head>
     <title>Hello world</title>
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
-    <style></style>
+    <script src="index.js" type="module"></script>
   </head>
   <body>
-    <h1 id="my-header" class="greeting">Hello world</h1>
+    <input id="barcode-input" placeholder="Enter barcode" />
+    <button id="search-button">Search</button>
+    <div id="result-container">
+      <h1 id="product-name"></h1>
+      <img id="product-image" />
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+    <!-- <h1 id="my-header" class="greeting">Hello world</h1>
+    <div class="container">
+      <h1>This is the first child</h1>
+      <h1>This is the second child</h1>
+      <div><h1>This should not be green</h1></div>
+    </div>
+
     <h2>Hello world</h2>
     <h3>Hello world</h3>
     <h4>Hello world</h4>
     <h5>Hello world</h5>
-    <p>This is our hello world app!</p>
+    <p>This is our hello world app!</p> -->
   </body>
 </html>
