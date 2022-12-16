@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preload": "node initializeDb",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "testWindows": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.10.0",
+    "mongoose": "^6.7.2",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
